@@ -1,25 +1,66 @@
 var selectElementsStartingWithA = function(array) {
-    return 'Write your method here';
+    var tab =[];
+    for (i=0; i<array.length; i++){
+        var lettre = array[i].charAt(0);
+
+        if (lettre.match(/a/)){
+            tab.push(array[i]);
+        }
+    }return tab;
 }
 
 var selectElementsStartingWithVowel = function(array) {
-    return 'Write your method here';
+    var tab =[];
+    for (i=0; i<array.length; i++){
+        var lettre = array[i].charAt(0);
+
+        if (lettre.match(/[aeiouy]/)){
+            tab.push(array[i]);
+        }
+    }return tab;
 }
 
 var removeNullElements = function(array) {
-    return 'Write your method here';
+    var tab = []
+    for (i=0; i<array.length; i++){
+        var motASupprimer = null;
+
+        if (motASupprimer != (array[i])){
+            tab.push(array[i]);
+        }
+    }return tab;
 }
 
+
 var removeNullAndFalseElements = function(array) {
-    return 'Write your method here';
+    var tab = [];
+    for (i=0; i<array.length; i++){
+        var motASupprimer = null;
+        var motASupprimerbis = false;
+        var zero = 0;
+
+        if (motASupprimer != (array[i]) && motASupprimerbis != (array[i]) || zero === (array[i]) ){
+            tab.push(array[i]);
+        }
+    }return tab;
 }
 
 var reverseWordsInArray = function(array) {
-    return 'Write your method here';
+       var tab = [];
+    for (i=0; i<array.length; i++){
+            MotInverser = array[i].split('').reverse().join('');
+            tab.push(MotInverser);
+        }
+    return tab;
 }
 
 var everyPossiblePair = function(array) {
-    return 'Write your method here';
+       var tab = [];
+    for (i=0; i<array.length; i++){
+            if (i != i++);
+            tab.push(array[i]);
+        }
+    return tab;
 }
 
 var allElementsExceptFirstThree = function(array) {
